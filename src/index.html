@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height converter</title>
+  <link rel="stylesheet" href="/src/assests/style.css">
+</head>
+
+<body>
+  <div class="appFace">
+    <div class="title">
+      <h1>Height Converter App</h1>
+    </div>
+    <div class="container-options">
+      <div class="feet2meters">
+        <input type="radio" id="f2m" name="conversionOption" checked="checked">
+        <label for="f2m">Feet to meters</label>
+      </div>
+      <div class="meters2feet">
+        <input type="radio" id="m2f" name="conversionOption">
+        <label for="m2f">Meters to feet</label>
+      </div>
+    </div>
+    <div class="container">
+      <label for="feet" id="feetMeter">Feet</label>
+      <input type="number" name="feet" id="feet-meter">
+    </div>
+    <div class="container">
+      <label for="inches" id="inchesCm">Inches</label>
+      <input type="number" name="inches" id="inches-cm">
+    </div>
+    <div class="button">
+      <button class="btn">Convert</button>
+    </div>
+    <div class="container">
+      <h2><span class="result"></span></h2>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
