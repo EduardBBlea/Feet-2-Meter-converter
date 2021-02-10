@@ -16,7 +16,7 @@
 const createConverter = ({
   // valorile de dupa egal sunt valori de default
   // in caz ca atunci cand se apeleaza functia nu se va specifica un "rootElement"
-  // acela va fi by default 'body' din dom
+  // acela va fi by default 'body'
   // la fel e valabil pentru toate valorile din obiect
   rootElement = 'body',
   title = "A-B Converter",
@@ -28,7 +28,7 @@ const createConverter = ({
 } = {}) => {
 
   // initializam elementul pe care o sa atasam converterul
-  // verificam daca este string, daca nu este string inseamna ca valoara este deja un DomElement, altfel
+  // verificam daca este string, daca nu este string inseamna ca valoarea este deja un DomElement, altfel
   // il selectam noi cu querySelector.
   const root = (typeof rootElement === 'string') ? document.querySelector(rootElement) : rootElement;
 
