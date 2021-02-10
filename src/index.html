@@ -5,41 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Height converter</title>
-  <link rel="stylesheet" href="/src/assests/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 20px 40px;
+    }
+
+    .converter-wrapper {
+      background: lightgray;
+      display: inline-block;
+      width: auto;
+      padding: 12px;
+      margin: 6px;
+      box-shadow: 0px 2px 4px -2px black;
+      border-radius: 4px;
+    }
+
+    .input-wrapper {
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-section {
+      display: flex;
+      margin-top: 12px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .input-section i {
+      color: green;
+    }
+
+    .input-section input {
+      width: 100px;
+      padding: 4px 6px;
+      margin: 0px 5px;
+    }
+
+    .label-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 24px;
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="appFace">
-    <div class="title">
-      <h1>Height Converter App</h1>
-    </div>
-    <div class="container-options">
-      <div class="feet2meters">
-        <input type="radio" id="f2m" name="conversionOption" checked="checked">
-        <label for="f2m">Feet to meters</label>
-      </div>
-      <div class="meters2feet">
-        <input type="radio" id="m2f" name="conversionOption">
-        <label for="m2f">Meters to feet</label>
-      </div>
-    </div>
-    <div class="container">
-      <label for="feet" id="feetMeter">Feet</label>
-      <input type="number" name="feet" id="feet-meter">
-    </div>
-    <div class="container">
-      <label for="inches" id="inchesCm">Inches</label>
-      <input type="number" name="inches" id="inches-cm">
-    </div>
-    <div class="button">
-      <button class="btn">Convert</button>
-    </div>
-    <div class="container">
-      <h2><span class="result"></span></h2>
-    </div>
+  <div class="main-wrapper">
   </div>
-
-
   <script src="app.js"></script>
 </body>
 
